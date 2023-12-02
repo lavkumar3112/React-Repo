@@ -1,0 +1,30 @@
+{
+  "name": "react-repo",
+  "version": "1.0.0",
+  "description": "This is namaste react by Lav kumar",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/lavkumar3112/React-Repo.git)"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react",
+    "Lav",
+    "Kumar"
+  ],
+  "author": "Lav Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
