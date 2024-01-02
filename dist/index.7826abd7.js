@@ -2947,22 +2947,12 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const parent = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "parent"
-}, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "child"
-}, [
-    /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {}, "This is heading"),
-    /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {}, "This is heading Namaste React \uD83D\uDC7A")
-]));
-//JSX
-console.log(parent);
+//React.createElement => Object => HTMLElement(render) 
 const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
     id: "heading"
-}, "This is React Web");
-console.log(heading); //object
+}, "Namaste React");
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(heading);
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
