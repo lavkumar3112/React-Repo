@@ -57,3 +57,7 @@ import {Component} from path
 # 2 types of routing in we apps
 - CLient side Routing
 - Server side Routing
+
+# Lazy Loading,Chunking
+- lazy() 
+- Suspense
