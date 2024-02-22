@@ -9,7 +9,7 @@ const RestaurantMenu = () =>{
     
     const {resId} = useParams();
     const resInfo = useRestaurantMenu(resId);
-   // console.log(resInfo);
+    console.log(resInfo);
     
 
    
@@ -30,7 +30,7 @@ const RestaurantMenu = () =>{
             <p> {resInfo?.cards[2]?.card?.card?.info?.cuisines.join(", ")} - {resInfo?.cards[2]?.card?.card?.info?.costForTwoMessage}</p>
             <h2>Menu</h2>
             <ul>
-                {resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards.map((item)=>(
+                {resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards.map((item)=>(
                     <li key={item.card.info.id}>
                         {item.card.info.name} -{"Rs."}
                         {item.card.info.price/100 || item.card.info.defaultPrice/100}

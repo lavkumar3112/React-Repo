@@ -54,8 +54,9 @@ const Body = () => {
                         //Filter res card and update UI
                         //searchText
                         console.log(searchText);
-                        console.log(listOfRestaurants);
+                        //console.log(listOfRestaurants);
                         const filteredRestaurant = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                        console.log(filteredRestaurant);
                         setFilteredRestaurant(filteredRestaurant);
 
 
@@ -66,7 +67,7 @@ const Body = () => {
                     const filteredList=listOfRestaurants.filter(
                         (res)=>res.info.avgRating>4
                     );
-                    setListOfRestaurant(filteredList);
+                    setFilteredRestaurant(filteredList);
                 }}
                 >
                     Top Rated Restaurant</button>
