@@ -61,3 +61,6 @@ import {Component} from path
 # Lazy Loading,Chunking
 - lazy() 
 - Suspense
+
+# Lift STate Up
+- Controlled and Uncontrolled Components
