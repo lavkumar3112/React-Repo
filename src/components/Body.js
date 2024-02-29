@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState ,useContext } from "react";
 import Shimmer from "./Shimmer";
 import RestaurantCard , {withPromtedLabel} from "./RestaurantCard";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../hooks/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 
 const Body = () => {
@@ -13,12 +14,14 @@ const Body = () => {
 
     const [searchText,setSearchText]=useState("");
 
+    const {loggedInUser,setUserName} =useContext(UserContext);
+
     const RestaurantCardPromoted = withPromtedLabel(RestaurantCard);
 
-    console.log(listOfRestaurants);
+    //console.log(listOfRestaurants);
 
     // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
-    console.log("Body rendered");
+    //console.log("Body rendered");
 
     useEffect(()=>{
         //console.log("render useEffect");
@@ -76,6 +79,10 @@ const Body = () => {
                 }}
                 >
                     Top Rated Restaurant</button>
+                </div>
+                <div className="search p-4 m-4 flex items-center">
+                    <label>UserName: </label>
+                    <input className="border border-black p-2" value={loggedInUser} onChange={(e)=>setUserName(e.target.value)}/>
                 </div>
                 
             </div>

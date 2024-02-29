@@ -64,3 +64,15 @@ import {Component} from path
 
 # Lift STate Up
 - Controlled and Uncontrolled Components
+
+# COntext
+- Context Provider
+- useContext
+
+# Redux Toolkit
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect store to app
+- Slice(CartSlice)
+- dispatch(action)
+- selector
