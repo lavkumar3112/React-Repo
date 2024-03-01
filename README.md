@@ -76,3 +76,9 @@ import {Component} from path
 - Slice(CartSlice)
 - dispatch(action)
 - selector
+
+# Types of Testing (Developer)
+
+- Unit Testing
+- Integration Testing
+- End to End Testing (E2E testing)
