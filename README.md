@@ -82,3 +82,13 @@ import {Component} from path
 - Unit Testing
 - Integration Testing
 - End to End Testing (E2E testing)
+
+# Setting up testing library in our app
+- install react testing library
+- Install jest
+- Install Babel dependencies
+- Configure Babel in babel.config.js
+- Configure Parcel Config file to disable defalut babel transpilation
+- write Jest Configuration - npx jest --init
+- Install JSDOM library
+
