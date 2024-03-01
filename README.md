@@ -92,3 +92,5 @@ import {Component} from path
 - write Jest Configuration - npx jest --init
 - Install JSDOM library
 
+# __ = dunder 
+
