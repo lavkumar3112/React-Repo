@@ -95,5 +95,8 @@ import {Component} from path
 - Include @babel/preset-react inside my babel config
 - Install @testing-library/jest-dom
 
+- it & test both are same 
+- describe to group test cases
+
 # __ = dunder 
 
