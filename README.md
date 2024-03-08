@@ -97,6 +97,7 @@ import {Component} from path
 
 - it & test both are same 
 - describe to group test cases
+- firevent
 
 # __ = dunder 
 
