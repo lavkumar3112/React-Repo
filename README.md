@@ -94,6 +94,8 @@ import {Component} from path
 - Install @babel/preset-react - to make JSX work in test cases
 - Include @babel/preset-react inside my babel config
 - Install @testing-library/jest-dom
+- To run test automatically - In package.json add watch-test : "jest --watch"
+
 
 - it & test both are same 
 - describe to group test cases
