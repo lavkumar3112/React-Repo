@@ -12,6 +12,7 @@ import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
+import Login from "./components/Login";
 // import Grocery from "./components/Grocery";
 
 
@@ -103,6 +104,10 @@ const appRouter=createBrowserRouter([
             {
                 path:"/grocery",
                 element: (<Suspense fallback={<h1>Loading ... </h1>}><Grocery/></Suspense>),
+            },
+            {
+                path:"/login",
+                element: <Login/>,
             },
             {
                 path: "/restaurants/:resId",

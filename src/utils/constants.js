@@ -6,3 +6,4 @@ export const LOGO_URL =
 
 export const MENU_API =
 "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.59080&lng=85.13480&restaurantId=";
+
