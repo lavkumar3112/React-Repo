@@ -3,13 +3,15 @@ import { useDispatch } from 'react-redux';
 import { checkValidData } from '../utils/validate';
 import { createUserWithEmailAndPassword ,signInWithEmailAndPassword ,updateProfile } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import {LOGO_URL} from "../utils/constants"
+import {LOGO_URL} from "../utils/constants";
+import {useNavigate} from "react-router-dom"
 
 
 const Login = () => {
     const [isSignInForm , setIsSignInForm]=useState(true);
     const [errorMessage,setErrorMessage]=useState(null);
     const dispatch=useDispatch();
+    const navigate = useNavigate();
 
     const name=useRef(null);
     const phone=useRef(null);
@@ -56,6 +58,8 @@ const Login = () => {
           .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
+            navigate('/');; 
+            
           })
           .catch((error) => {
             const errorCode = error.code;
